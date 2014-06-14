@@ -19,17 +19,19 @@
   <script src="js/message.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
-	<form action="http://www.baidu.com" method="get">
-		<input type="text" vlaue="fewfe" name="url">
-		<input type="submit" value="ewfewf">
-	</form>
-	<p><button id="addinfoTop">添加信息到顶部</button> <button id="addinfoBottom">添加信息到底部</button></p>
+	<div style="padding:30px;">
+			<form action="http://www.baidu.com" method="get">
+				<input type="text" vlaue="fewfe" name="url" placeholder="按下弹出信息框">
+				<input type="submit" value="点击提交会跳转，弹出信息框后不会跳转">
+			</form>
+			<br>
+			<p><button id="addinfoTop">添加信息到顶部</button> <button id="addinfoBottom">添加信息到底部</button></p>
+	</div>
 	<script>
 		$('input[type="text"]').keyup(function(){
 			ct.alert({
 				text: "hello world",
-				type: "alert",
-				width: 300
+				type: "alert"
 			});
 		});
 		$(function(){
@@ -71,6 +73,10 @@
 				expire: 6000
 			});
 			
+			ct.message({
+				type: "confirm-error",
+				text: "信息"
+			});
 			/*
 			ct.confirm({
 				text: "这是一个正常的确认框!",
