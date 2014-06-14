@@ -2,18 +2,18 @@ ctmessage
 =========
 
 提供了alert、confirm和message的实现
-
-如何使用：
-引入js和css文件
-调用下面代码实现一个基本的alert框
-ct.alert({
-	text: "hello world",
-	type: "alert"
-});
-
-调用方法
-ct.message({type, text, title, position, expire, callback})
-type是弹出框类型：
+<br><br>
+如何使用：<br>
+引入js和css文件<br>
+调用下面代码实现一个基本的alert框<br>
+ct.alert({<br>
+	text: "hello world",<br>
+	type: "alert"<br>
+});<br>
+<br>
+调用方法<br>
+ct.message({type, text, title, position, expire, callback})<br>
+type是弹出框类型：<br>
   alert alert-error
   confirm confirm-error
   info info
