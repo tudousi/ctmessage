@@ -1,0 +1,119 @@
+/*遮罩*/
+.ct_modal_cover {
+	background-color:#000;
+	cursor:default;
+	opacity: 0.2;
+	filter:alpha(opacity = 20);
+	position: fixed;
+	z-index:19999;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	border: none;
+	zoom: 1;
+}
+.ct_modal_box{
+	overflow:hidden;
+	display: inline-block;
+	min-width: 300px;
+	width:300px !important;
+	position: fixed;
+	text-align: center;
+	z-index: 20000;
+	
+	-webkit-box-shadow: 0 0 16px 0 #BDBDBD;
+	box-shadow: 0 0 16px 0 #BDBDBD;
+    
+    background:#fff;
+    border-radius: 6px;
+    outline:none;
+}
+/*正常*/
+.ct_popup_title {
+	background:#98cd6d;
+	height:28px;
+	line-height:28px;
+	color:#fff;
+	font-size: 14px;
+}
+/*警告*/
+.ct-confirm-error .ct_popup_title {
+	background:#fc4545;
+}
+
+.ct_popup_text {
+	min-height:30px;
+	padding:20px 10px 10px 10px !important;
+	color: #444;
+	overflow: hidden;
+	font-size:13px;
+}
+.ct_popup_controls {
+	padding: 20px 10px 10px 10px !important;
+	font-weight: bold;
+	padding: 10px 10px 17px 10px !important;
+}
+
+.ct_popup_button {
+	font-size: 12px;
+	font-weight: bold;
+	min-width: 120px;
+	width: 120px;
+	height: 30px;
+	line-height:30px;
+	display: inline-block;
+	margin: 0 5px;
+	border-radius: 4px;
+	cursor:pointer;
+}
+.ct_popup_button {
+	color:#fff;
+	text-shadow: 0 1px 0 #000;
+	background:#9daef9;
+}
+.ct_message_area {
+	position: fixed;
+	right: 5px;
+	width: 250px;
+	z-index: 1000;
+	padding: 5px 0px;
+}
+.ct_info, .ct_popup_title, .ct_popup_button {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	-moz-user-select: -moz-none;
+	cursor: pointer;
+}
+.ct_info {
+	color: #444;
+	border-radius: 4px;
+	min-width: 120px;
+	padding: 10px 10px 10px 20px;
+	background-color: #FFFFCC;
+	font-size: 12px;
+	z-index: 10000;
+	margin: 0px 5px 5px 5px;
+	border: 1px solid #d3d3d3;
+	box-shadow: 0px 0px 5px #ccc;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+.ct-error {
+	background-color: #f17373;
+	color: #fff;
+}
+.ct_info.hidden {
+	height: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	border-width: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	overflow: hidden;
+}

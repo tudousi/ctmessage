@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='zh-CN' xml:lang='zh-CN' xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <title>信息框</title>
+  <style>
+  * {
+  	padding:0;
+  	margin:0;
+  }
+  	html,body {
+  		height:100%;
+  		width:100%;
+  	}
+  </style>
+  <link rel="stylesheet" type="text/css" href="css/message.css"/>
+  <script src="js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/message.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<form action="http://www.baidu.com" method="get">
+		<input type="text" vlaue="fewfe" name="url">
+		<input type="submit" value="ewfewf">
+	</form>
+	<p><button id="addinfoTop">添加信息到顶部</button> <button id="addinfoBottom">添加信息到底部</button></p>
+	<script>
+		$('input[type="text"]').keyup(function(){
+			ct.alert({
+				text: "hello world",
+				type: "alert",
+				width: 300
+			});
+		});
+		$(function(){
+			$("#addinfoTop").click(function(){
+				ct.message({
+					type: "",
+					position: "top",
+					text: "我是添加到顶部信息-4秒后关闭",
+					expire: 4000
+				});
+			});
+			
+			$("#addinfoBottom").click(function(){
+				ct.message({
+					type: "",
+					position: "bottom",
+					text: "我是添加到底部信息-4秒后关闭",
+					expire: 4000
+				});
+			});
+			
+			ct.message({
+				text: "测试信息正常!",
+				expire: -1
+			});
+			ct.message({
+				type: "error",
+				text: "测试信息-错误",
+				expire: -1
+			});
+			ct.message({
+				type: "",
+				text: "测试信息正常-3秒后关闭",
+				expire: 3000
+			});
+			ct.message({
+				type: "error",
+				text: "测试信息错误-6秒后关闭",
+				expire: 6000
+			});
+			
+			/*
+			ct.confirm({
+				text: "这是一个正常的确认框!",
+				type: "confirm",
+				callback: function(result){
+					ct.confirm({
+						title: "确认框-带标题",
+						text: "这是一个正常的确认框带标题!",
+						type: "confirm",
+						callback: function(result){
+							ct.confirm({
+								title: "确认框-警告",
+								text: "这是一个正常的确认框带标题!",
+								type: "confirm-error",
+								callback: function(result){
+									
+								}
+							});
+						}
+					});
+				}
+			});*/
+			
+		});
+		
+	</script>
+	
+</body>
+</html>
