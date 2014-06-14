@@ -14,14 +14,14 @@ ct.alert({<br>
 调用方法<br>
 ct.message({type, text, title, position, expire, callback})<br>
 type是弹出框类型：<br>
-  alert alert-error
-  confirm confirm-error
-  info info
-
-title 标题文本
-text  提示内容
-position  type为info时  信息框对应的位置  top在顶部 bottom在底部
-expire 信息框存活周期 type为info才有用
-callback(result)  关闭窗口后的回调函数
+  alert alert-error<br>
+  confirm confirm-error<br>
+  info info<br>
+<br><br>
+title 标题文本<br>
+text  提示内容<br>
+position  type为info时  信息框对应的位置  top在顶部 bottom在底部<br>
+expire 信息框存活周期 type为info才有用<br>
+callback(result)  关闭窗口后的回调函数<br><br><br>
 
 
